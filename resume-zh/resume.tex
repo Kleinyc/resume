@@ -1,0 +1,122 @@
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} 
+\usepackage{linespacing_fix}
+\usepackage{cite}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=cyan,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
+\begin{document}
+\pagenumbering{gobble}
+
+%***"%"后面的所有内容是注释而非代码，不会输出到最后的PDF中
+%***使用本模板，只需要参照输出的PDF，在本文档的相应位置做简单替换即可
+%***修改之后，输出更新后的PDF，只需要点击Overleaf中的“Recompile”按钮即可
+
+%在大括号内填写其他信息，最多填写4个，但是如果选择不填信息，
+%那么大括号必须空着不写，而不能删除大括号。
+%\otherInfo后面的四个大括号里的所有信息都会在一行输出
+%如果想要写两行，那就用两次这个指令（\otherInfo{}{}{}{}）即可
+
+\sepspace
+
+%***********个人信息**************
+\MyName{XXX}
+\sepspace
+%\SimpleEntry{哈尔滨工业大学}
+\SimpleEntry{X\hspace{0.2cm}XX岁\hspace{0.2cm}中国}
+\SimpleEntry{tel}
+\SimpleEntry{e-mail}
+\SimpleEntry{\href{https://kleinyang.com/}{https://kleinyang.com/}}
+
+%************照片**************
+%照片需要放到images文件夹下，名字必须是you.jpg，注意.jpg后缀（可以去resume.cls第101行处修改），如果不需要照片可以不添加此行命令
+%0.15的意思是，照片的宽度是页面宽度的0.15倍，调整大小，避免遮挡文字
+\yourphoto{0.13}
+
+%***********个人信息**************
+%\section{个人信息}
+%
+% \quad 性别：男 \hspace{2.35cm} 籍贯：  \hspace{2.25cm} 民族：汉族
+%
+% \quad 出生年月：  \hspace{0.5cm}政治面貌：  \hspace{0.5cm} 联系地址：
+
+
+%***********教育背景**************
+\section{教育背景}
+%***第一个大括号里的内容向左对齐，第二个大括号里的内容向右对齐
+%***\textbf{}括号里的字是粗体，\textit{}括号里的字是斜体
+\datedsubsection{\textbf{MIT}，计算机，GPA：XXX/100,综合排名：1/12138，\textit{本科}}{20XX.09 - 至今}
+
+\begin{itemize}
+	\item 国家奖学金、校优秀毕业生
+\end{itemize}
+
+%***********实习经历**************
+
+\section{实习经历}
+
+\datedsubsection{\textbf{Google}:SD}{20XX.0X - 20XX.0X}
+\Content
+{\textit{描述}：职位所需}
+{\textit{我的职责}：干了什么}
+{\textit{成果}：顺利完成实习任务、或者受到高度评价，收获了什么}
+
+
+
+%***********过往经历**************
+\section{项目竞赛经历}
+
+\datedsubsection{\textbf{XXXX大学电子XXX研究所XXX项目}:XXX Dashboard}{20XX.0X - 20XX.0X}
+\Content
+{\textit{描述}：分析获取的XXX数据，在商定的范围内，建立一个研究模型，明确潜在变量和假设，得出XXX统计资料等相关因素对XXXX的可能影响，最后使用XXXX进行可视化，给予XXXXX支持。}
+{\textit{我的职责}：使用XXXX进行可视化。}
+{\textit{成果}：XXXX认可了我们的工作。}
+
+
+
+\datedsubsection{\textbf{国家级大学生创新创业项目}:基于计算机视觉的XXXX\quad 负责人}{20XX.0X - 20XX.0X}
+\Content
+{\textit{描述}：以实现及时、准确、自动、智能地对XXXX，开发了基于区域推荐机制的XXXXX的算法模型以及基于XXXXXX的算法模型。}
+{\textit{我的职责}：搭建XXXXX的算法模型，书写项目报告等。}
+{\textit{成果}：获得了大学生创新创业项目一等奖、“挑战杯”XXXXX竞赛一等奖。}
+
+%\datedsubsection{\textbf{美国大学生数学建模竞赛}:Vespa mandarinia invasion:Analysis and Strategy}{2021.01 - 2021.02}
+%\Content
+%{\textit{描述}：20XX年XX月，在XXXXX。由于XXXXX的潜在影响严重，根据任务需求，我们建立一系列模型来分析、讨论和评价关于XXXX的一些问题，最终建立了四个模型:模型I:XXX模型;模型II:XXX模型;模型III:XXX模型;模型IV:XXX模型。}
+%{\textit{我的职责}：建立数学模型和算法模型，完成建模论文撰写。}
+%{\textit{成果}：美国大学生数学建模竞赛X奖。}
+
+
+\section{学生工作}
+\datedsubsection{\textbf{推文撰写与微信公众号运营}}{20XX.0X - 20XX.0XXX}
+\Content
+{\textit{描述}：XXX}
+{\textit{我的职责}：XXX}
+{\textit{成果}：主稿的推文最高获得3W+的阅读量}
+
+
+
+\section{专业技能}
+\datedsubsection{\textbf{计算机方面}：Python、SQL、C++、PS、PR}{}
+\datedsubsection{\textbf{英语方面}：CET-6}{}
+%\datedsubsection{\textbf{专业证书}：}{}
+\sepspace
+
+\section{奖励荣誉}
+
+\datedsubsection{\textbf{竞赛方面}:}{}
+\datedsubsection{全国大学生XXXX一等奖}{20XX}
+\datedsubsection{全国大学生数学建模大赛XXX}{20XX}
+%\datedsubsection{\textbf{论文方面}：xxx}{2020}
+%\datedsubsection{\textbf{奖学金方面}：}{}
+%\datedsubsection{国家励志奖学金}{}
+%\datedsubsection{校级人民奖学金}{X次}
+\section{自我评价}
+\datedsubsection{\quad \quad XXX}{}
+
+\end{document}
